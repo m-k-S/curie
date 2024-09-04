@@ -2,3 +2,10 @@ mp_api
 pymatgen
 spglib
 ase
+e3nn-jax
+lax
+flax
+matscipy
+jraph
+nequip_jax @ git+https://github.com/mariogeiger/nequip-jax.git
+emmet

@@ -1026,7 +1026,7 @@ def get_spacegroup_and_pointgroup(structure):
     cell = (lattice, positions, numbers)
     dataset = spglib.get_symmetry_dataset(cell)
 
-    schoenflies_name = spglib.get_spacegroup_type(dataset['hall_number'])['pointgroup_schoenflies']
+    schoenflies_name = spglib.get_spacegroup_type(dataset.hall_number).pointgroup_schoenflies
     pg = Pointgroup(schoenflies_name)
 
     return spg, pg
